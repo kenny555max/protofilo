@@ -1,0 +1,426 @@
+body
+    background-color: floralwhite
+
+
+.wrapper
+    padding: 100px 0
+    height: auto
+    background-position: center
+    background-size: cover
+    background-repeat: no-repeat
+    .container
+        .banner
+            position: relative
+            .row
+                .proto
+                    background-color: black
+                    padding-top: 20px
+                    h4
+                        color: floralwhite
+                    .small
+                        display: grid
+                        grid-row-gap: 40px
+                        grid-template-columns: repeat(9, 1fr)
+                        margin-top: 70px
+                        small
+                            opacity: 0.6
+                            background-color: lightgrey
+                            height: 5px
+                            width: 5px
+                            border-radius: 50%
+
+                header
+                    height: 600px
+                    nav
+                        .toggle
+                            position: absolute
+                            display: none
+                            right: 20px
+                            top: 20px
+                            font-size: 30px
+                            color: floralwhite
+                            cursor: pointer
+
+
+                        ul
+                            z-index: 9999999999999
+                            height: 70px
+                            position: absolute
+                            width: 100%
+                            background-color: orange
+                            width: 100%
+                            height: 60px  
+                            display: flex
+                            align-items: center
+                            justify-content: center
+                            padding: 0 0
+                            li
+                                a
+                                    font-weight: bolder
+                                    font-size: .8em
+                                    color: floralwhite
+                                    text-decoration: none
+                                .active
+                                    &::after
+                                        content: ""
+                                        background-color: black
+                                        width: 40px
+                                        height: 2px
+                                        display: block
+                                        position: absolute
+
+
+                    .img-banner
+                        .banner-img
+                            background-position: top center
+                            background-size: cover
+                            background-repeat: no-repeat
+                            height: 600px
+                            width: 100%
+
+            .banner-text
+                top: 65%
+                left: 15%
+                position: absolute
+                width: 50%
+
+                h3
+                    margin-bottom: 0
+                    color: floralwhite
+
+                h1
+                    color: floralwhite
+                h5
+                    color: black
+                    background-color: orange
+                    padding: 10px 10px
+                    width: 220px
+                    font-weight: bolder
+
+
+        .content-sec
+            .content
+                padding-bottom: 100px
+                background-color: floralwhite
+                .top
+                    padding-top: 100px
+                    padding-bottom: 50px
+                    padding-right: 20px
+                    padding-left: 20px
+                    background-color: lightgrey
+                    .row
+                        .left
+                            display: flex
+                            flex-direction: column
+                            align-items: flex-end
+                            justify-content: flex-end
+                            
+                            .img
+                                height: 450px
+                                width: 400px
+                                background-position: center
+                                background-size: cover
+                                background-repeat: no-repeat
+                                position: relative
+                                z-index: 1
+
+                            .bg-color
+                                background-color: black
+                                height: 450px
+                                width: 400px
+                                position: absolute
+                                top: 0
+                                transform: translate(-40px, -40px)
+
+                            .small-color
+                                background-color: transparent
+                                width: 30px
+                                height: 30px
+                                border: 7px solid yellow
+                                position: absolute
+                                top: -18px
+                                right: 80px
+                                z-index: 1
+                                border-radius: 50%
+
+                                &::before
+                                    content: ""
+                                    left: -30px
+                                    position: absolute
+                                    width: 15px
+                                    height: 15px
+                                    background-color: yellow
+                                    border-radius: 50%
+
+                            .small
+                                display: grid
+                                grid-template-columns: repeat(14, 1fr)
+                                grid-row-gap: 10px
+                                grid-column-gap: 10px
+                                margin-top: 20px
+                                small
+                                    border-radius: 50%
+                                    width: 3px
+                                    height: 3px
+                                    display: block
+                                    background-color: grey
+
+                        .right
+                            padding: 60px 40px 0 20px
+                            .top-top
+                                position: relative
+                                .small
+                                    position: absolute
+                                    display: grid
+                                    grid-template-columns: repeat(9, 1fr)
+                                    grid-column-gap: 20px
+                                    grid-row-gap: 10px
+                                    top: 5px
+                                    right: 100px
+                                    small
+                                        background-color: grey
+                                        width: 3px
+                                        height: 3px
+                                        z-index: 1
+
+
+                .mid
+                    background-color: floralwhite
+                    padding: 100px 150px
+                    position: relative
+                    .head
+                        // position: relative
+                        display: flex
+                        justify-content: center
+                        align-items: center
+                        flex-direction: column
+                        h1
+                            font-weight: bolder
+                            width: 300px
+                            margin-bottom: 0
+                            position: relative
+                            &::after
+                                content: ""
+                                background-color: transparent
+                                width: 35px
+                                height: 35px
+                                position: absolute
+                                border-radius: 50%
+                                border: 5px solid yellow
+                                right: 15px
+
+                            &::before
+                                content: ""
+                                background-color: transparentize
+                                position: absolute
+                                width: 20px
+                                height: 20px
+                                border-radius: 50%
+                                right: 23px
+                                top: 7px
+                                border: 5px solid yellow
+
+                        .small
+                            position: absolute
+                            display: grid
+                            grid-template-columns: repeat(9, 1fr)
+                            grid-row-gap: 30px
+                            grid-column-gap: 20px
+                            right: 0
+                            z-index: 1
+                            top: 50px
+                            small
+                                display: block
+                                background-color: lightgrey
+                                width: 10px
+                                height: 10px
+                                border-radius: 50%
+                                
+                        p
+                            width: 200px
+                            margin-top: -10px
+                            font-weight: bolder
+                            position: relative
+                            z-index: 999999999999999
+
+                            &::before
+                                z-index: -1
+                                display: block
+                                content: ""
+                                background-color: yellow
+                                width: 140px
+                                height: 8px
+                                position: absolute
+                                top: 5px
+                                right: 0
+                
+                        .nav
+                            display: flex
+                            justify-content: center
+                            margin-bottom: 20px
+
+                            li
+                                a
+                                    color: black
+                                    text-decoration: none
+                                    font-weight: bolder
+                                .active
+                                    position: relative
+                                    &::after
+                                        content: ""
+                                        background-color: orange
+                                        width: 30px
+                                        height: 5px
+                                        position: absolute
+                                        left: 15px
+                                        bottom: 5px
+                    .imgs
+                        .img
+                            height: 300px
+                            margin-bottom: 10px
+                            width: 100%
+                            background-position: center
+                            background-size: cover
+                            background-repeat: no-repeat
+
+                .load-more
+                    display: flex
+                    justify-content: center
+                    a
+                        padding: 10px 30px
+                        border-radius: 20px
+                        color: floralwhite
+                        text-decoration: none
+                        background-color: black
+
+
+
+@media screen and ( max-width: 991px)
+    .wrapper
+        .container
+            .banner
+                .row
+                    header
+                        nav
+                            .toggle
+                                z-index: 9999999999
+                                display: block
+                                background-color: orange
+                                font-weight: bolder
+                                padding: 5px 5px
+                            ul
+                                display: none
+                                height: auto
+                                padding-bottom: 10px !important
+
+                                li
+                                    padding: 0 0 !important
+                                    width: 100%
+                                    a
+                                        &:hover
+                                            transition: all .3s 
+                                            background-color: floralwhite
+                                            color: orange
+
+                                .active
+                                    margin-top: 50px
+                                    &::after
+                                        display: none !important
+
+            .content-sec
+                .content
+                    .top
+                        .left
+                            display: flex !important
+                            justify-content: center !important
+                            align-items: center !important
+
+                        .small-color
+                            right: 30% !important
+
+                    .mid
+                        padding: 150px 0 !important
+
+@media screen and ( max-width: 575px)
+    .wrapper
+        .container
+            .banner
+                .proto
+                    .small
+                        margin-left: 30px
+                        margin-top: 40px !important
+                        padding-bottom: 40px !important
+    
+
+    
+@media screen and ( max-width: 546px)
+    .wrapper
+        .container
+            padding: 0 0 !important
+            .banner
+                .proto
+                    h4
+                    .small
+                        margin-top: 20px !important
+                        padding-bottom: 40px
+                        margin-left: 20px
+                .banner-text
+                    width: 300px
+                    left: 5% !important
+                    h3
+                        font-size: 1.2em
+                    h1
+                        font-size: 1.5em
+                    h5
+                        font-size: 1em
+                        width: 200px
+
+
+            .content-sec
+                .content
+                    .top
+                        .left
+                            .img
+                                width: 330px !important
+                            .bg-color
+                                transform: translate(-20px, -20px) !important
+                                width: 325px !important
+                        .right
+                            .top-top
+                                .small
+                                    right: -40px !important
+                    .mid
+                        padding: 100px 0 !important
+                        .head
+                            ul
+                                display: flex !important
+                                flex-direction: column !important
+                                li
+                                    .active
+                                        z-index: 9
+                                        &::after
+                                            left: 50px !important
+
+                            h1
+                                z-index: 9
+
+                            .small
+                                left: 10px !important
+
+
+@media screen and ( max-width: 280px)
+    .banner
+        .banner-text
+            width: 90% !important
+
+
+    .content-sec
+        .content
+            .top
+                .left
+                    overflow: hidden
+
+            .mid
+                .head
+                    h1
+                        width: 100% !important
